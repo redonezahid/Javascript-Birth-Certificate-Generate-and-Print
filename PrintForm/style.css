@@ -1,0 +1,391 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&display=swap');
+html,
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Heebo', sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button#submitBtn{
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    background-color: rgb(36, 36, 36);
+    padding: 14px 36px;
+    color: #ffffff;
+    margin-top: 16px;
+    cursor: pointer;
+}
+button#downloadPdf{
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    background-color: rgb(36, 36, 36);
+    padding: 14px 36px;
+    color: #ffffff;
+    margin-top: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 45px;
+    right: 100px;
+    transform: rotate(90deg);
+}
+/*Form Insert Data*/
+.pf__insert__data{
+    width: 760px;
+    padding: 20px;
+    border: 1px solid #c2c2c2;
+    margin-bottom: 10px;
+}
+
+/*All Form Fields Spacing*/
+.pfi__registerNum,
+.pfi__registrateDate,
+.pfi__resNo,
+.pfi__idfNo,
+.pfi__fullName,
+.pf__dateBirthTxt,
+.pfi__fatherName,
+.pfi__motherName,
+.pfi__placeOfbirth,
+.pfi__permanentAddress{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/*All Input Field Levels*/
+.pfi__registerNum h5,
+.pfi__registrateDate h5,
+.pfi__resNo h5,
+.pfi__idfNo h5,
+.pfi__fullName h5,
+.pf__dateBirthTxt .pfi__dateOfbirth h5,
+.pf__dateBirthTxt .pfi__dateOfbirthTxt h5,
+.pfi__fatherName .pfiFatherLeft h5,
+.pfi__fatherName .pfiFatherRight h5,
+.pfi__motherName .pfimotherLeft h5,
+.pfi__motherName .pfimotherRight h5,
+.pfi__placeOfbirth h5,
+.pfi__permanentAddress h5{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+/*All Input Fields*/
+.pfi__registerNum .pfi__registerNum__input input,
+.pfi__registrateDate__input input,
+.pfi__registerNo__input input,
+.pfi__idfNo__input input,
+.pfi__fullName input,
+.pf__dateBirthTxt .pfi__dateOfbirth input,
+.pf__dateBirthTxt .pfi__dateOfbirthTxt input,
+.pfi__fatherName .pft__fatherName__input input,
+.pfi__motherName .pft__motherName__input input,
+.pfi__placeOfbirth__input input,
+.pfi__permanentAddress__input input{
+    width: 170px;
+    height: 36px;
+    border: none;
+    padding: 5px 8px;
+    position: relative;
+    background-color: #d9d9d9;
+}
+
+.pfi__registerNum{
+    display: flex;
+    align-items: center;
+}
+.pfi__registerNum .pfi__registerNum__input{
+    margin-left: 10px;
+}
+.pfi__registerNum .pfi__registerNum__input input{
+    width: 36px;
+    height: 36px;
+    text-align: center;
+}
+
+.pfi__registrateDate__input input{
+    width: 720px;
+}
+.pfi__resNo{
+    display: flex;
+    align-items: center;
+}
+.pfi__registerNo__input{
+    margin-left: 10px;
+}
+.pfi__registerNo__input input{
+    width: 36px;
+    height: 36px;
+}
+.pfi__idfNo__input input{
+    width: 36px;
+    height: 36px;
+    text-align: center;
+}
+.pfi__nameGender{
+    display: flex;
+}
+.pfi__fullName input{
+    width: 475px;
+    margin-right: 5px;
+}
+.pfi__gender__input input{
+    width: 240px;
+}
+.pf__dateBirthTxt{
+    display: flex;
+}
+.pf__dateBirthTxt .pfi__dateOfbirth input{
+    width: 260px;
+    margin-right: 5px;
+}
+.pf__dateBirthTxt .pfi__dateOfbirthTxt input{
+    width: 460px;
+}
+.pfi__fatherName,
+.pfi__motherName{
+    display: flex;
+}
+.pfi__fatherName .pft__fatherName__input input,
+.pfi__motherName .pft__motherName__input input{
+    width: 360px;
+    margin-right: 5px;
+}
+.pfi__placeOfbirth__input input,
+.pfi__permanentAddress__input input{
+    margin-bottom: 10px;
+}
+
+
+
+
+/*Form Preview Data*/
+.pf__preview__data{
+    width: 840px;
+    padding: 10px;
+    border: 1px solid #c2c2c2;
+}
+.pf__inner__preview__data{
+    width: 820px;
+    padding: 20px 20px;
+    border: 1px solid #e4e4e4;
+    position: relative;
+}
+.pf__preview__head{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.pf__preview__head h2{
+    font-size: 28px;
+}
+.pf__preview__head h6{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.pf__preview__head h5{
+    font-size: 16px;
+    font-weight: 600;
+}
+.pf__preview__head h3{
+    font-size: 28px;
+    margin-top: 40px;
+}
+.registerBookNumber{
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+}
+.registerBookNumber h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+.registerBookNumber__input__group{
+    margin-left: 10px;
+    position: relative;
+}
+.registerBookNumber__input__group input{
+    width:30px;
+    height: 30px;
+    text-align: center;
+    border:1px solid #c2c2c282;
+}
+.registerBookDate{
+    margin-bottom: 20px;
+    position: relative;
+}
+.registerBookDate h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.registerNumber{
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+}
+.registerNumber h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+.registerNumber__input__group{
+    margin-left: 10px;
+    position: relative;
+}
+.registerNumber__input__group input{
+    width:30px;
+    height: 30px;
+    text-align: center;
+    border:1px solid #c2c2c282;
+}
+
+.identifationNumber{
+    position: relative;
+    display: flex;
+    margin-bottom: 60px;
+}
+.identifationNumber h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+.identifationNumber__input__group{
+    margin-left: 10px;
+    position: relative;
+}
+.identifationNumber__input__group input{
+    width:30px;
+    height: 30px;
+    text-align: center;
+    border:1px solid #c2c2c282;
+}
+.fullName{
+    margin-bottom: 5px;
+}
+.fullName h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+.dateOfbirth{
+    margin-bottom: 14px;
+}
+.dateOfbirth h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.dateOfbirth h5 .spcent{
+    margin-left: 100px;
+}
+.placeOfBirth{
+    margin-bottom: 20px;
+}
+.placeOfBirth h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+ #rupzill{
+    padding-left: 110px;
+}
+.fatherName,
+.motherName{
+    margin-bottom: 16px;
+}
+.motherName{
+    margin-bottom: 20px;
+}
+.fatherName h5,
+.motherName h5{
+    display: flex;
+    justify-content: space-between;
+}
+.fatherName h5 > .fl-left{
+    font-size: 16px;
+    font-weight: 500;
+}
+.fatherName h5 > .fl-right,
+.motherName h5 > .fl-right{
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 100px;
+}
+.motherName{
+    margin-bottom: 12px;
+}
+.motherName h5 > .fl-left{
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 150px;
+}
+.permanentAddress{
+    margin-bottom: 160px;
+}
+.permanentAddress h5{
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+#pupzill{
+    padding-left: 150px;
+}
+.pf__gender{
+    display: flex;
+    align-items: center;
+    top: 52.5%;
+    right: 50px;
+    position: absolute;
+}
+.pf__gender h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.pf__gender .pf__gender__input{
+    position: relative;
+}
+.pf__gender .pf__gender__input input{
+    width: 18px;
+    height: 18px;
+}
+.pf__gender .pf__gender__input input#female{
+    margin-left: 10px;
+}
+.pf__issue__date{
+    top: 29.5%;
+    right: 20px;
+    position: absolute;
+}
+.pf__issue__date h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.pf__preview__bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.pf__preview__bottom h6{
+    font-size: 14px;
+    font-weight: 500;
+}
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Form Data and Gererate PDF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="pf__container">
+        <div class="pf__insert__data" id="pf__insert__data">
+            <div class="pf__inner_insert__data">
+                <div class="pf__preview__head">
+                    <h2>People's Republic Of Bangladesh</h2>
+                    <h6>Office of e Register of Birth and Death</h6>
+                    <h5>Gourigram Union Parishad</h5>
+                    <h5>Santhia,Pabna, Bangladesh</h5>
+                </div>
+                <div class="pf__insert__fromField">
+                    <div class="pfi__registerNum">
+                        <h5>Register Book Number :</h5>
+                        <div class="pfi__registerNum__input">
+                            <input type="number" id="pfiresNum1">
+                            <input type="number" id="pfiresNum2">
+                            <input type="number" id="pfiresNum3">
+                        </div>
+                    </div>
+                    <div class="pfi__registrateDate">
+                        <h5>Registration Date : </h5>
+                        <div class="pfi__registrateDate__input">
+                            <input type="text" id="pfiresDate" placeholder="Ex: 27/09/2023">
+                        </div>
+                    </div>
+                    <div class="pfi__resNo">
+                        <h5>Register Number :</h5>
+                        <div class="pfi__registerNo__input">
+                            <input type="number" id="pfiresNo1">
+                            <input type="number" id="pfiresNo2">
+                            <input type="number" id="pfiresNo3">
+                            <input type="number" id="pfiresNo4">
+                            <input type="number" id="pfiresNo5">
+                            <input type="number" id="pfiresNo6">
+                        </div>
+                    </div>
+                    <div class="pfi__idfNo">
+                        <h5>Idenfication Number :</h5>
+                        <div class="pfi__idfNo__input">
+                            <input type="number" id="pfidfNo1">
+                            <input type="number" id="pfidfNo2">
+                            <input type="number" id="pfidfNo3">
+                            <input type="number" id="pfidfNo4">
+                            <input type="number" id="pfidfNo5">
+                            <input type="number" id="pfidfNo6">
+                            <input type="number" id="pfidfNo7">
+                            <input type="number" id="pfidfNo8">
+                            <input type="number" id="pfidfNo9">
+                            <input type="number" id="pfidfNo10">
+                            <input type="number" id="pfidfNo11">
+                            <input type="number" id="pfidfNo12">
+                            <input type="number" id="pfidfNo13">
+                            <input type="number" id="pfidfNo14">
+                            <input type="number" id="pfidfNo15">
+                            <input type="number" id="pfidfNo16">
+                            <input type="number" id="pfidfNo17">
+                        </div>
+                    </div>
+                    <div class="pfi__nameGender">
+                        <div class="pfi__fullName">
+                            <h5>Full Name: </h5>
+                            <div class="pfi__fullName__input">
+                                <input type="text" id="pfiFullName" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="pfi__fullName">
+                            <h5>Gender: </h5>
+                            <div class="pfi__gender__input">
+                                <input type="text" id="pfiGender" placeholder="Gender">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pf__dateBirthTxt">
+                        <div class="pfi__dateOfbirth">
+                            <h5>Date Of Birth :</h5>
+                            <div class="pfi__dateOfbirth__input">
+                                <input type="text" id="pdateOfbirth" placeholder="Ex: 12/04/1999">
+                            </div>
+                        </div>
+                        <div class="pfi__dateOfbirthTxt">
+                            <h5>Date Of Birth Text:</h5>
+                            <div class="pfi__dateOfbirthtxt__input">
+                                <input type="text" id="pdateOfbirthtxt" placeholder="Ex: April Thirthen">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pfi__placeOfbirth">
+                        <h5>Place Of Birth:</h5>
+                        <div class="pfi__placeOfbirth__input">
+                            <input type="text" id="pfiVillName" placeholder="Village Name">
+                            <input type="text" id="pfiWardName" placeholder="Ward Number">
+                            <input type="text" id="pfiPdName" placeholder="Parisad Name">
+                            <input type="text" id="pfiUpName" placeholder="Upazila Name">
+                            <input type="text" id="pfiDtName" placeholder="District Name">
+                        </div>
+                    </div>
+                    <div class="pfi__fatherName">
+                        <div class="pfiFatherLeft">
+                            <h5>Father Name: </h5>
+                            <div class="pft__fatherName__input">
+                                <input type="text" id="pfifatherName" placeholder="Father Name">
+                            </div>
+                        </div>
+                        <div class="pfiFatherRight">
+                            <h5>Nationality: </h5>
+                            <div class="pft__fatherName__input">
+                                <input type="text" id="pfifatherNas" placeholder="Father Nationality">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pfi__motherName">
+                        <div class="pfimotherLeft">
+                            <h5>Mother Name: </h5>
+                            <div class="pft__motherName__input">
+                                <input type="text" id="pfimotherName" placeholder="Mother Name">
+                            </div>
+                        </div>
+                        <div class="pfimotherRight">
+                            <h5>Nationality: </h5>
+                            <div class="pft__motherName__input">
+                                <input type="text" id="pfimotherNas" placeholder="Mother Nationality">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pfi__permanentAddress">
+                        <h5>Permanent Address:</h5>
+                        <div class="pfi__permanentAddress__input">
+                            <input type="text" id="pvillName" placeholder="Village Name">
+                            <input type="text" id="pward" placeholder="Ward Number">
+                            <input type="text" id="pupN" placeholder="Parisadh Name">
+                            <input type="text" id="pupzilla" placeholder="Upazila Name">
+                            <input type="text" id="pdistct" placeholder="District Name">
+                        </div>
+                    </div>
+                    <button id="submitBtn">Generate Certificate</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pf__preview__data" id="pf__preview__data">
+            <div class="pf__inner__preview__data">
+                <div class="pf__preview__head">
+                    <h2>People's Republic Of Bangladesh</h2>
+                    <h6>Office of e Register of Birth and Death</h6>
+                    <h5>Gourigram Union Parishad</h5>
+                    <h5>Santhia,Pabna, Bangladesh</h5>
+                    <h3>Birth Certificate</h3>
+                    <h6>(Copy from the Birth Registration Book)</h6>
+                </div>
+                <div class="pf__preview__body">
+                    <div class="registerBookNumber">
+                        <h5>Registration Book No:</h5>
+                        <div class="registerBookNumber__input__group">
+                            <input type="number" id="rInput1">
+                            <input type="number" id="rInput2">
+                            <input type="number" id="rInput3">
+                        </div>
+                    </div>
+                    <div class="registerBookDate">
+                        <h5>Registration Date: <span id="registerBookDate"></span></h5>
+                    </div>
+                    <div class="registerNumber">
+                        <h5>Registration No:</h5>
+                        <div class="registerNumber__input__group">
+                            <input type="number" id="rNInput1">
+                            <input type="number" id="rNInput2">
+                            <input type="number" id="rNInput3">
+                            <input type="number" id="rNInput4">
+                            <input type="number" id="rNInput5">
+                            <input type="number" id="rNInput6">
+                        </div>
+                    </div>
+                    <div class="identifationNumber">
+                        <h5>Personal Identification No:</h5>
+                        <div class="identifationNumber__input__group">
+                            <input type="number" id="idnInput1">
+                            <input type="number" id="idnInput2">
+                            <input type="number" id="idnInput3">
+                            <input type="number" id="idnInput4">
+                            <input type="number" id="idnInput5">
+                            <input type="number" id="idnInput6">
+                            <input type="number" id="idnInput7">
+                            <input type="number" id="idnInput8">
+                            <input type="number" id="idnInput9">
+                            <input type="number" id="idnInput10">
+                            <input type="number" id="idnInput11">
+                            <input type="number" id="idnInput12">
+                            <input type="number" id="idnInput13">
+                            <input type="number" id="idnInput14">
+                            <input type="number" id="idnInput15">
+                            <input type="number" id="idnInput16">
+                            <input type="number" id="idnInput17">
+                        </div>
+                    </div>
+                    <div class="fullName">
+                        <h5>Name: <span id="fullName"></span></h5>
+                    </div>
+                    <div class="dateOfbirth">
+                        <h5>Date Of Birth: In Number(AD) : <span id="birthdateNumber"></span></h5>
+                        <h5><span class="spcent"></span>In Word(AD) : <span id="birthdateText"></span></h5>
+                    </div>
+                    <div class="placeOfBirth">
+                        <h5>Place Of Birth: <span id="rvillage"></span>, <span id="rward"></span>, <span id="runp"></span>, <br /><span id="rupzill"></span>, <span id="rdistric"></span></span></h5>
+                    </div>
+                    <div class="fatherName">
+                        <h5><span class="fl-left">Father's Name: <span id="fatherName"></span></span> <span class="fl-right">Nationality: <span id="NationalFat"></span></span></h5>
+                    </div>
+                    <div class="motherName">
+                        <h5><span class="fl-left">Mother's Name: <span id="motherName"></span></span> <span class="fl-right">Nationality: <span id="NationalMot"></span></span></h5>
+                    </div>
+                    <div class="permanentAddress">
+                        <h5>Permanent Address: <span id="rpvillage"></span>, <span id="rpward"></span>, <span id="rpunp"></span>, <br /><span id="rpupz"></span>, <span id="rpdistric"></span></span></h5>
+                    </div>
+                    <div class="pf__gender">
+                        <h5>Gender: <span id="gender"> </span></h5>
+                    </div>
+                    <div class="pf__issue__date">
+                        <h5>Certificate Issue Date: <span id="issuedate"></span></h5>
+                    </div>
+                    <div class="pf__preview__bottom">
+                        <h6>(Signature, Name & Seal of the Person Prepared)</h6>
+                        <h6>(Signature, Name & Seal of the Register)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="downloadPdf">Download Pdf</button>
+    </div>
+
+    <!-- html2pdf CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
